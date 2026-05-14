@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///C:/Users/xaxu_/Downloads/gallery_2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom Valley Nursery — Gallery</title>
+  <link rel="stylesheet" href="file:///C:/Users/xaxu_/Downloads/style.css">
+  <style>
+    .gallery-intro {
+      padding: 32px 40px 8px;
+      background-color: var(--white);
+    }
+    .gallery-intro h2 {
+      font-size: 22px;
+      font-weight: bold;
+      color: var(--canopy-green);
+      margin-bottom: 16px;
+    }
+    .view-cart-btn {
+      background-color: var(--canopy-green);
+      color: var(--white);
+      border: none;
+      padding: 9px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+    .view-cart-btn:hover {
+      background-color: var(--meadow-mist);
+      color: var(--detritus-green);
+    }
+
+    /* Gallery Table */
+    .gallery-section {
+      padding: 24px 40px 48px;
+      background-color: var(--white);
+    }
+    .gallery-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    .gallery-table td {
+      border: 1px solid var(--border-color);
+      padding: 20px 16px;
+      text-align: center;
+      vertical-align: top;
+      width: 33.33%;
+      background-color: var(--cloudy-gray);
+    }
+    .gallery-table img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 4px;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .gallery-table h3 {
+      font-size: 15px;
+      font-weight: bold;
+      color: var(--canopy-green);
+      margin-bottom: 6px;
+    }
+    .gallery-table p {
+      font-size: 13px;
+      color: var(--detritus-green);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .add-to-cart-btn {
+      background-color: var(--canopy-green);
+      color: var(--white);
+      border: none;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+    .add-to-cart-btn:hover {
+      background-color: var(--meadow-mist);
+      color: var(--detritus-green);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="file:///C:/Users/xaxu_/Downloads/index.html" class="header-logo">
+      <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="22" r="20" stroke="#96BAA0" stroke-width="2.5"></circle>
+        <path d="M22 32 C16 26 12 20 16 13 C19 9 24 10 27 14 C30 10 35 9 38 13 C42 20 38 26 22 32Z" stroke="#96BAA0" stroke-width="2" fill="none"></path>
+        <line x1="22" y1="32" x2="22" y2="38" stroke="#96BAA0" stroke-width="2"></line>
+      </svg>
+      <span class="header-title">Bloom Valley Nursery</span>
+    </a>
+    <nav>
+      <a href="file:///C:/Users/xaxu_/Downloads/index.html">Home</a>
+      <a href="file:///C:/Users/xaxu_/Downloads/gallery.html" class="active">Gallery</a>
+      <a href="file:///C:/Users/xaxu_/Downloads/aboutus.html">About Us</a>
+      <a href="file:///C:/Users/xaxu_/Downloads/community.html">Community</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="gallery-intro">
+      <h2>Choose from our plants &amp; supplies...</h2>
+      <button class="view-cart-btn" onclick="openCart()">View Cart</button>
+    </div>
+
+    <div class="gallery-section">
+      <table class="gallery-table">
+        <tbody><tr>
+          <td>
+            <img src="./Bloom Valley Nursery — Gallery_files/320px-Biwa_mature2.jpg" alt="Apple Tree">
+            <h3>Apple Tree</h3>
+            <p>A classic fruit-bearing tree perfect for home gardens. Produces crisp, sweet apples each harvest season.</p>
+            <button class="add-to-cart-btn" onclick="addToCart(&#39;Apple Tree&#39;)">Add to Cart</button>
+          </td>
+          <td>
+            <img src="./Bloom Valley Nursery — Gallery_files/320px-Birch_tree_forest_in_autumn.jpg" alt="Birch Tree">
+            <h3>Birch Tree</h3>
+            <p>An elegant ornamental tree with distinctive white bark, ideal for creating shade and visual interest.</p>
+            <button class="add-to-cart-btn" onclick="addToCart(&#39;Birch Tree&#39;)">Add to Cart</button>
+          </td>
+          <td>
+            <img src="./Bloom Valley Nursery — Gallery_files/320px-Acer_palmatum_2.jpg" alt="Maple Tree">
+            <h3>Maple Tree</h3>
+            <p>Stunning fall foliage in vibrant reds and oranges. A beloved choice for front yards and landscapes.</p>
+            <button class="add-to-cart-btn" onclick="addToCart(&#39;Maple Tree&#39;)">Add to Cart</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="./Bloom Valley Nursery — Gallery_files/320px-Aloe_vera_plant.jpg" alt="Aloe Vera Plant">
+            <h3>Aloe Vera Plant</h3>
+            <p>A low-maintenance succulent with natural healing properties. Great for sunny windowsills indoors.</p>
+            <button class="add-to-cart-btn" onclick="addToCart(&#39;Aloe Vera Plant&#39;)">Add to Cart</button>
+          </td>
+          <td>
+            <img src="./Bloom Valley Nursery — Gallery_files/320px-Spider_plant_(Chlorophytum_comosum).jpg" alt="Spider Plant">
+            <h3>Spider Plant</h3>
+            <p>An air-purifying indoor favourite. Hardy and easy to propagate, perfect for beginner gardeners.</p>
+            <button class="add-to-cart-btn" onclick="addToCart(&#39;Spider Plant&#39;)">Add to Cart</button>
+          </td>
+          <td>
+            <img src="./Bloom Valley Nursery — Gallery_files/320px-Senecio_rowleyanus3.jpg" alt="String of Pearls Plant">
+            <h3>String of Pearls</h3>
+            <p>A unique trailing succulent with round, bead-like leaves. Perfect in a hanging basket or high shelf.</p>
+            <button class="add-to-cart-btn" onclick="addToCart(&#39;String of Pearls Plant&#39;)">Add to Cart</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="./Bloom Valley Nursery — Gallery_files/320px-YellowLabradorLooking_new.jpg" alt="Birdhouse">
+            <h3>Birdhouse</h3>
+            <p>A charming handcrafted birdhouse to attract local birds to your garden. Weather-resistant finish.</p>
+            <button class="add-to-cart-btn" onclick="addToCart(&#39;Birdhouse&#39;)">Add to Cart</button>
+          </td>
+          <td>
+            <img src="./Bloom Valley Nursery — Gallery_files/320px-YellowLabradorLooking_new.jpg" alt="Potting Soil">
+            <h3>Potting Soil</h3>
+            <p>Premium nutrient-rich potting mix ideal for container plants, raised beds, and transplanting seedlings.</p>
+            <button class="add-to-cart-btn" onclick="addToCart(&#39;Potting Soil&#39;)">Add to Cart</button>
+          </td>
+          <td>
+            <img src="./Bloom Valley Nursery — Gallery_files/320px-Watering_can.jpg" alt="Watering Can">
+            <h3>Watering Can</h3>
+            <p>A durable 2-litre watering can with a long spout for precise watering of indoor and outdoor plants.</p>
+            <button class="add-to-cart-btn" onclick="addToCart(&#39;Watering Can&#39;)">Add to Cart</button>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+  </main>
+
+  <!-- CART MODAL -->
+  <div class="modal-overlay" id="cart-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeCart()">✕</button>
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <div class="modal-actions">
+        <button class="btn-primary" onclick="processOrder()">Process Order</button>
+        <button class="btn-secondary" onclick="clearCart()">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="newsletter-section">
+        <label>Sign up for our Newsletter</label>
+        <div class="newsletter-row">
+          <input type="email" id="footer-email" placeholder="Your email" required="">
+          <button onclick="subscribe()">Subscribe</button>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="file:///C:/Users/xaxu_/Downloads/gallery_2.html#" title="Facebook">▲</a>
+        <a href="file:///C:/Users/xaxu_/Downloads/gallery_2.html#" title="Instagram">◆</a>
+        <a href="file:///C:/Users/xaxu_/Downloads/gallery_2.html#" title="X / Twitter">✖</a>
+        <a href="file:///C:/Users/xaxu_/Downloads/gallery_2.html#" title="YouTube">▶</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <a href="file:///C:/Users/xaxu_/Downloads/index.html">Home</a>
+      <a href="file:///C:/Users/xaxu_/Downloads/gallery.html">Gallery</a>
+      <a href="file:///C:/Users/xaxu_/Downloads/aboutus.html">About Us</a>
+      <a href="file:///C:/Users/xaxu_/Downloads/community.html">Community</a>
+    </div>
+  </footer>
+
+  <script>
+    // Cart uses sessionStorage
+    function getCart() {
+      var stored = sessionStorage.getItem('cartItems');
+      return stored ? JSON.parse(stored) : [];
+    }
+
+    function saveCart(cart) {
+      sessionStorage.setItem('cartItems', JSON.stringify(cart));
+    }
+
+    function addToCart(itemName) {
+      var cart = getCart();
+      cart.push(itemName);
+      saveCart(cart);
+      alert('Item added to the cart: ' + itemName);
+    }
+
+    function openCart() {
+      var cart = getCart();
+      var list = document.getElementById('cart-items');
+      list.innerHTML = '';
+      if (cart.length === 0) {
+        list.innerHTML = '<li style="list-style:none;color:#888;">Your cart is empty.</li>';
+      } else {
+        cart.forEach(function(item) {
+          var li = document.createElement('li');
+          li.textContent = item;
+          list.appendChild(li);
+        });
+      }
+      document.getElementById('cart-modal').classList.add('active');
+    }
+
+    function closeCart() {
+      document.getElementById('cart-modal').classList.remove('active');
+    }
+
+    function clearCart() {
+      sessionStorage.removeItem('cartItems');
+      alert('Cart is cleared!');
+      closeCart();
+    }
+
+    function processOrder() {
+      sessionStorage.removeItem('cartItems');
+      alert('Thank you for your order.');
+      closeCart();
+    }
+
+    function subscribe() {
+      var email = document.getElementById('footer-email').value;
+      if (!email) { alert('Please fill out this field.'); return; }
+      alert('Thank you for subscribing!');
+      document.getElementById('footer-email').value = '';
+    }
+  </script>
+
+
+
+</body></html>

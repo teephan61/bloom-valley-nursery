@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloom Valley Nursery — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Hero Section */
+    .hero {
+      background-color: var(--sky-bloom);
+      padding: 56px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .hero-text h2 {
+      font-size: 30px;
+      font-weight: bold;
+      color: var(--canopy-green);
+      margin-bottom: 14px;
+    }
+    .hero-text p {
+      font-size: 16px;
+      max-width: 520px;
+      color: var(--detritus-green);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    /* Promos */
+    .promos-section {
+      background-color: var(--cloudy-gray);
+      padding: 48px 40px;
+    }
+    .promos-section h2 {
+      font-size: 22px;
+      font-weight: bold;
+      color: var(--canopy-green);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .promos-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .promo-box {
+      flex: 1;
+      min-width: 220px;
+      background-color: var(--canopy-green);
+      color: var(--white);
+      padding: 24px 20px;
+      border-radius: 6px;
+      border: 2px solid var(--canopy-green);
+    }
+    .promo-box h3 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .promo-box p { font-size: 14px; line-height: 1.5; }
+
+    /* Product Images */
+    .products-section {
+      padding: 48px 40px;
+      background-color: var(--white);
+    }
+    .products-section h2 {
+      font-size: 22px;
+      font-weight: bold;
+      color: var(--canopy-green);
+      margin-bottom: 24px;
+    }
+    .products-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .product-img-box {
+      flex: 1;
+      min-width: 200px;
+      background-color: var(--cloudy-gray);
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+    .product-img-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .product-img-box p {
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--canopy-green);
+      text-align: center;
+    }
+
+    /* Perks */
+    .perks-section {
+      background-color: var(--sunlit-petal);
+      padding: 48px 40px;
+      text-align: center;
+    }
+    .perks-section h2 {
+      font-size: 22px;
+      font-weight: bold;
+      color: var(--canopy-green);
+      margin-bottom: 24px;
+    }
+    .perks-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .perk-box {
+      background-color: var(--white);
+      border: 2px solid var(--canopy-green);
+      border-radius: 6px;
+      padding: 24px 20px;
+      flex: 1;
+      min-width: 200px;
+      max-width: 280px;
+    }
+    .perk-box h3 {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--canopy-green);
+      margin-bottom: 8px;
+    }
+    .perk-box p { font-size: 14px; color: var(--detritus-green); }
+
+    /* Categories */
+    .categories-section {
+      background-color: var(--cloudy-gray);
+      padding: 48px 40px;
+    }
+    .categories-section h2 {
+      font-size: 22px;
+      font-weight: bold;
+      color: var(--canopy-green);
+      margin-bottom: 20px;
+    }
+    .categories-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .categories-table td {
+      padding: 10px 16px;
+      font-size: 15px;
+      border: 1px solid var(--border-color);
+      background-color: var(--white);
+      width: 50%;
+      color: var(--detritus-green);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html" class="header-logo">
+      <!-- Canopy Green leaf logo SVG -->
+      <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="22" r="20" stroke="#96BAA0" stroke-width="2.5"/>
+        <path d="M22 32 C16 26 12 20 16 13 C19 9 24 10 27 14 C30 10 35 9 38 13 C42 20 38 26 22 32Z" stroke="#96BAA0" stroke-width="2" fill="none"/>
+        <line x1="22" y1="32" x2="22" y2="38" stroke="#96BAA0" stroke-width="2"/>
+      </svg>
+      <span class="header-title">Bloom Valley Nursery</span>
+    </a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="community.html">Community</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Welcome to Bloom Valley Nursery</h2>
+        <p>Your local, family-owned plant nursery specializing in trees, plants, and gardening supplies. We connect gardening enthusiasts and homeowners with the natural beauty of horticulture, rooted in sustainability and community.</p>
+        <a href="gallery.html"><button class="btn-primary">Shop Our Plants</button></a>
+      </div>
+    </section>
+
+    <!-- Promos -->
+    <section class="promos-section">
+      <h2>Current Promotions</h2>
+      <div class="promos-grid">
+        <div class="promo-box">
+          <h3>Spring Sale</h3>
+          <p>Get 20% off all indoor plants this season. Brighten up your home with lush greenery.</p>
+        </div>
+        <div class="promo-box">
+          <h3>Buy 2, Get 1 Free</h3>
+          <p>Purchase any two trees and receive a third of equal or lesser value absolutely free.</p>
+        </div>
+        <div class="promo-box">
+          <h3>Weekend Special</h3>
+          <p>Visit us on weekends for exclusive deals on potting soil, planters, and garden tools.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Images -->
+    <section class="products-section">
+      <h2>Featured Plants</h2>
+      <div class="products-grid">
+        <div class="product-img-box">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Biwa_mature2.jpg/320px-Biwa_mature2.jpg" alt="Apple Tree" />
+          <p>Apple Tree</p>
+        </div>
+        <div class="product-img-box">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Aloe_vera_plant.jpg/320px-Aloe_vera_plant.jpg" alt="Aloe Vera Plant" />
+          <p>Aloe Vera Plant</p>
+        </div>
+        <div class="product-img-box">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Watering_can.jpg/320px-Watering_can.jpg" alt="Garden Supplies" />
+          <p>Garden Supplies</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Perks -->
+    <section class="perks-section">
+      <h2>Why Shop Here...</h2>
+      <div class="perks-grid">
+        <div class="perk-box">
+          <h3>Locally Grown</h3>
+          <p>Our plants are grown locally, ensuring freshness and supporting the community economy.</p>
+        </div>
+        <div class="perk-box">
+          <h3>Expert Advice</h3>
+          <p>Our knowledgeable staff are passionate gardeners ready to help you find the right plant.</p>
+        </div>
+        <div class="perk-box">
+          <h3>Sustainable Practices</h3>
+          <p>We are committed to eco-friendly growing methods and sustainable packaging materials.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories-section">
+      <h2>Shop by Category</h2>
+      <table class="categories-table">
+        <tr>
+          <td>Indoor Plants</td>
+          <td>Outdoor Trees</td>
+        </tr>
+        <tr>
+          <td>Succulents &amp; Cacti</td>
+          <td>Hanging Plants</td>
+        </tr>
+        <tr>
+          <td>Potting Soil &amp; Fertilizer</td>
+          <td>Garden Tools &amp; Supplies</td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="newsletter-section">
+        <label>Sign up for our Newsletter</label>
+        <div class="newsletter-row">
+          <input type="email" id="footer-email" placeholder="Your email" required />
+          <button onclick="subscribe()">Subscribe</button>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="#" title="Facebook">&#9650;</a>
+        <a href="#" title="Instagram">&#9670;</a>
+        <a href="#" title="X / Twitter">&#10006;</a>
+        <a href="#" title="YouTube">&#9654;</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="community.html">Community</a>
+    </div>
+  </footer>
+
+  <script>
+    function subscribe() {
+      var email = document.getElementById('footer-email').value;
+      if (!email) {
+        alert('Please fill out this field.');
+        return;
+      }
+      alert('Thank you for subscribing!');
+      document.getElementById('footer-email').value = '';
+    }
+  </script>
+
+</body>
+</html>
