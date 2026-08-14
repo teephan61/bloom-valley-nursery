@@ -176,9 +176,9 @@
     </a>
     <nav>
       <a href="index.html" class="active">Home</a>
-      <a href="gallery.html">Gallery</a>
+      <a href="Gallery.html">Gallery</a>
       <a href="aboutus.html">About Us</a>
-      <a href="community.html">Community</a>
+      <a href="Community.html">Community</a>
     </nav>
   </header>
 
@@ -190,7 +190,7 @@
       <div class="hero-text">
         <h2>Welcome to Bloom Valley Nursery</h2>
         <p>Your local, family-owned plant nursery specializing in trees, plants, and gardening supplies. We connect gardening enthusiasts and homeowners with the natural beauty of horticulture, rooted in sustainability and community.</p>
-        <a href="gallery.html"><button class="btn-primary">Shop Our Plants</button></a>
+        <a href="Gallery.html"><button class="btn-primary">Shop Our Plants</button></a>
       </div>
     </section>
 
@@ -218,15 +218,15 @@
       <h2>Featured Plants</h2>
       <div class="products-grid">
         <div class="product-img-box">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Biwa_mature2.jpg/320px-Biwa_mature2.jpg" alt="Apple Tree" />
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tree%20with%20red%20apples%20in%20Barkedal%204.jpg?width=320" alt="Apple Tree" />
           <p>Apple Tree</p>
         </div>
         <div class="product-img-box">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Aloe_vera_plant.jpg/320px-Aloe_vera_plant.jpg" alt="Aloe Vera Plant" />
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aloe%20vera%20plant%20in%20flower%20pot.jpg?width=320" alt="Aloe Vera Plant" />
           <p>Aloe Vera Plant</p>
         </div>
         <div class="product-img-box">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Watering_can.jpg/320px-Watering_can.jpg" alt="Garden Supplies" />
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Metal%20Watering%20Can.jpg?width=320" alt="Garden Supplies" />
           <p>Garden Supplies</p>
         </div>
       </div>
@@ -291,21 +291,22 @@
     </div>
     <div class="footer-nav">
       <a href="index.html">Home</a>
-      <a href="gallery.html">Gallery</a>
+      <a href="Gallery.html">Gallery</a>
       <a href="aboutus.html">About Us</a>
-      <a href="community.html">Community</a>
+      <a href="Community.html">Community</a>
     </div>
   </footer>
 
+  <!-- Touchstone Task 3.1: Subscribe button click event -->
   <script>
     function subscribe() {
-      var email = document.getElementById('footer-email').value;
-      if (!email) {
-        alert('Please fill out this field.');
+      var input = document.getElementById('footer-email');
+      if (!input.checkValidity()) {
+        input.reportValidity();
         return;
       }
-      alert('Thank you for subscribing!');
-      document.getElementById('footer-email').value = '';
+      alert('Thank you for subscribing.');
+      input.value = '';
     }
   </script>
 
