@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-
-<html lang="en"><head><meta charset="UTF-8">
-  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bloom Valley Nursery — Community</title>
   <link rel="stylesheet" href="style.css">
@@ -141,7 +141,7 @@
         </div>
         <div class="spotlight-card">
           <h3>Anna Lee</h3>
-          <p>Anna has filled her apartment with our indoor succulents and hanging plants. She says our staff’s expert advice helped her keep every plant alive. We’re proud to support her green thumb!</p>
+          <p>Anna has filled her apartment with our indoor succulents and hanging plants. She says our staff's expert advice helped her keep every plant alive. We're proud to support her green thumb!</p>
         </div>
       </div>
     </section>
@@ -178,7 +178,7 @@
       <div class="newsletter-section">
         <label>Sign up for our Newsletter</label>
         <div class="newsletter-row">
-          <input type="email" id="footer-email" placeholder="Your email" required="">
+          <input type="email" id="footer-email" placeholder="Your email" required>
           <button onclick="subscribe()">Subscribe</button>
         </div>
       </div>
@@ -197,15 +197,18 @@
     </div>
   </footer>
 
+  <!-- Touchstone Task 3.1: Subscribe button click event -->
   <script>
     function subscribe() {
-      var email = document.getElementById('footer-email').value;
-      if (!email) { alert('Please fill out this field.'); return; }
-      alert('Thank you for subscribing!');
-      document.getElementById('footer-email').value = '';
+      var input = document.getElementById('footer-email');
+      if (!input.checkValidity()) {
+        input.reportValidity();
+        return;
+      }
+      alert('Thank you for subscribing.');
+      input.value = '';
     }
   </script>
 
-
-
-</body></html>
+</body>
+</html>
