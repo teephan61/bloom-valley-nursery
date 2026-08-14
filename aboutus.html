@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-
-<html lang="en"><head><meta charset="UTF-8">
-  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bloom Valley Nursery — About Us</title>
   <link rel="stylesheet" href="style.css">
@@ -170,11 +170,11 @@
       <form id="contact-form" onsubmit="submitForm(event)">
         <div class="form-group">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required="">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
         </div>
         <div class="form-group">
           <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" placeholder="Your Email" required="">
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
         </div>
         <div class="form-group">
           <label for="phone">Phone Number:</label>
@@ -203,7 +203,7 @@
       <div class="newsletter-section">
         <label>Sign up for our Newsletter</label>
         <div class="newsletter-row">
-          <input type="email" id="footer-email" placeholder="Your email" required="">
+          <input type="email" id="footer-email" placeholder="Your email" required>
           <button onclick="subscribe()">Subscribe</button>
         </div>
       </div>
@@ -222,6 +222,7 @@
     </div>
   </footer>
 
+  <!-- Touchstone Task 3.1: Contact form Submit + Subscribe alerts -->
   <script>
     function submitForm(e) {
       e.preventDefault();
@@ -231,12 +232,7 @@
       var feedback = document.getElementById('feedback').value;
       var customOrder = document.getElementById('custom-order').checked;
 
-      if (!name || !email) {
-        alert('Please enter your name, email and feedback!');
-        return;
-      }
-
-      // Save to localStorage
+      // Save to localStorage (preview of Task 3.2 — Storing Data with Web Storage)
       var formData = {
         name: name,
         email: email,
@@ -246,7 +242,7 @@
       };
       localStorage.setItem(name, JSON.stringify(formData));
 
-      alert('Thank you for your message, ' + name + '!');
+      alert('Thank you for your message.');
       document.getElementById('contact-form').reset();
     }
 
@@ -255,13 +251,15 @@
     }
 
     function subscribe() {
-      var email = document.getElementById('footer-email').value;
-      if (!email) { alert('Please fill out this field.'); return; }
-      alert('Thank you for subscribing!');
-      document.getElementById('footer-email').value = '';
+      var input = document.getElementById('footer-email');
+      if (!input.checkValidity()) {
+        input.reportValidity();
+        return;
+      }
+      alert('Thank you for subscribing.');
+      input.value = '';
     }
   </script>
 
-
-
-</body></html>
+</body>
+</html>
